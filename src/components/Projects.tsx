@@ -38,7 +38,7 @@ const Projects = () => {
               </CardContent>
               <CardActions>
                 <Button size="small" href={project.link}>
-                  View Code
+                  View repository
                 </Button>
               </CardActions>
             </Card>

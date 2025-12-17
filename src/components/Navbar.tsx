@@ -15,7 +15,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const navItems = ['About', 'Projects', 'Contact'];
+  const navItems = ['About', 'Projects'];
 
   const toggleDrawer = () => {
     setMobileOpen(!mobileOpen);
@@ -42,7 +42,7 @@ const Navbar = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            MY PORTFOLIO
+            PORTFOLIO
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (

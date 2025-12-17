@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'Infoscreen',
     description:
-      "Infoscreen software built for Helsinki University Exactum building's infoscreens. Web application with an interactive floorplan, a bulletin board and a school restaurant menu api built with React, Node.js, MongoDB, Redis and Docker",
+      "Web application for university's infoscreens with an interactive floorplan, a bulletin board and a restaurant menu built with React, Node.js, MongoDB, Redis and Docker",
     link: 'https://github.com/Infopisteprojekti/infopiste',
   },
   {
@@ -28,7 +28,7 @@ export const projectData: ProjectWithImage[] = projects.map((project) => {
   let imagePath = '';
 
   switch (project.title) {
-    case 'News Article Scraping Tool':
+    case 'News article scraping tool':
       imagePath = newsArticlesImage;
       break;
     case 'Infoscreen':
