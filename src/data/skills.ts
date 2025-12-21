@@ -1,27 +1,25 @@
-import {
-  ReactOriginal,
-  PythonOriginal,
-  FlaskOriginal,
-  JavascriptOriginal,
-  TypescriptOriginal,
-  NodejsOriginal,
-  ExpressOriginal,
-  MongodbOriginal,
-  PostgresqlOriginal,
-  RedisOriginal,
-  DockerOriginal,
-  GithubOriginal,
-  GitOriginal,
-  Html5Original,
-  Css3Original,
-  UbuntuOriginal,
-  GraphqlPlain,
-  KubernetesOriginal,
-  ReduxOriginal,
-  VitejsOriginal,
-  TailwindcssOriginal,
-  GithubactionsOriginal,
-} from 'devicons-react';
+import ReactOriginal from 'devicons-react/icons/ReactOriginal';
+import PythonOriginal from 'devicons-react/icons/PythonOriginal';
+import FlaskOriginal from 'devicons-react/icons/FlaskOriginal';
+import JavascriptOriginal from 'devicons-react/icons/JavascriptOriginal';
+import TypescriptOriginal from 'devicons-react/icons/TypescriptOriginal';
+import NodejsOriginal from 'devicons-react/icons/NodejsOriginal';
+import ExpressOriginal from 'devicons-react/icons/ExpressOriginal';
+import MongodbOriginal from 'devicons-react/icons/MongodbOriginal';
+import PostgresqlOriginal from 'devicons-react/icons/PostgresqlOriginal';
+import RedisOriginal from 'devicons-react/icons/RedisOriginal';
+import DockerOriginal from 'devicons-react/icons/DockerOriginal';
+import GithubOriginal from 'devicons-react/icons/GithubOriginal';
+import GitOriginal from 'devicons-react/icons/GitOriginal';
+import Html5Original from 'devicons-react/icons/Html5Original';
+import Css3Original from 'devicons-react/icons/Css3Original';
+import UbuntuOriginal from 'devicons-react/icons/UbuntuOriginal';
+import GraphqlPlain from 'devicons-react/icons/GraphqlPlain';
+import KubernetesOriginal from 'devicons-react/icons/KubernetesOriginal';
+import ReduxOriginal from 'devicons-react/icons/ReduxOriginal';
+import VitejsOriginal from 'devicons-react/icons/VitejsOriginal';
+import TailwindcssOriginal from 'devicons-react/icons/TailwindcssOriginal';
+import GithubactionsOriginal from 'devicons-react/icons/GithubactionsOriginal';
 
 import type { Skill, Category } from '../types';
 
