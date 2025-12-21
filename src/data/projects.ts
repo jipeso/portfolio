@@ -1,8 +1,8 @@
 import { type Project } from '../types';
 
-import newsArticlesImage from '../assets/news-articles.png';
-import infoScreenImage from '../assets/infoscreen.png';
-import bibtexProjectImage from '../assets/bibtex-project.png';
+import newsArticlesImage from '../assets/news-articles.webp';
+import infoScreenImage from '../assets/infoscreen.webp';
+import bibtexProjectImage from '../assets/bibtex-project.webp';
 
 export const projectData: Project[] = [
   {
