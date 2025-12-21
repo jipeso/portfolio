@@ -7,7 +7,7 @@ const Skills = () => {
     <Box component="section" id="skills" sx={{ py: 8 }}>
       <Container maxWidth="lg">
         <Typography variant="h4" gutterBottom>
-          My tech stack
+          Skills
         </Typography>
         {categories.map((category) => (
           <Box key={category} sx={{ mb: 1 }}>

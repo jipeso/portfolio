@@ -17,6 +17,9 @@ import {
   UbuntuOriginal,
   GraphqlPlain,
   KubernetesOriginal,
+  ReduxOriginal,
+  VitejsOriginal,
+  TailwindcssOriginal,
 } from 'devicons-react';
 
 import type { Skill, Category } from '../types';
@@ -95,5 +98,20 @@ export const skillData: Skill[] = [
     name: 'GraphQL',
     category: 'Backend development',
     IconComponent: GraphqlPlain,
+  },
+  {
+    name: 'Redux',
+    category: 'Frontend development',
+    IconComponent: ReduxOriginal,
+  },
+  {
+    name: 'Vite',
+    category: 'Frontend development',
+    IconComponent: VitejsOriginal,
+  },
+  {
+    name: 'Tailwind',
+    category: 'Frontend development',
+    IconComponent: TailwindcssOriginal,
   },
 ];
