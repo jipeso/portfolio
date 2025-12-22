@@ -1,6 +1,6 @@
-import { Grid, Container, Typography, Box, Divider } from '@mui/material';
+import { Container, Typography, Box, Grid } from '@mui/material';
 import { skillData, categories } from '../../data/skills';
-import SkillItem from './SkillItem';
+import CategoryCard from './categoryCard';
 
 const Skills = () => {
   return (
@@ -9,29 +9,18 @@ const Skills = () => {
         <Typography variant="h4" gutterBottom>
           Skills
         </Typography>
-        {categories.map((category) => (
-          <Box key={category} sx={{ mb: 1 }}>
-            <Typography
-              variant="h5"
-              component="h3"
-              sx={{ mb: 2, color: 'text.secondary' }}
-            >
-              {category}
-            </Typography>
-
-            <Grid container spacing={1}>
-              {skillData
-                .filter((skill) => skill.category === category)
-                .map((skill) => (
-                  <Grid key={skill.name}>
-                    <SkillItem skill={skill} />
-                  </Grid>
-                ))}
+        <Grid container spacing={3}>
+          {categories.map((category) => (
+            <Grid size={{ xs: 12, sm: 6, md: 6, lg: 6 }} key={category}>
+              <CategoryCard
+                title={category}
+                skills={skillData.filter(
+                  (skill) => skill.category === category
+                )}
+              />
             </Grid>
-
-            <Divider sx={{ mt: 2, opacity: 0.6 }} />
-          </Box>
-        ))}
+          ))}
+        </Grid>
       </Container>
     </Box>
   );

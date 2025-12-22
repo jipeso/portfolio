@@ -1,11 +1,10 @@
 import { type ElementType } from 'react';
 
 export type Category =
-  | 'Programming Languages'
-  | 'Frontend development'
-  | 'Backend development'
+  | 'Languages'
+  | 'Frameworks & Libraries'
   | 'Databases'
-  | 'Other Tools';
+  | 'Tools & Platforms';
 
 export interface Skill {
   name: string;

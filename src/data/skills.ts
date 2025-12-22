@@ -24,47 +24,46 @@ import GithubactionsOriginal from 'devicons-react/icons/GithubactionsOriginal';
 import type { Skill, Category } from '../types';
 
 export const categories: Category[] = [
-  'Programming Languages',
-  'Frontend development',
-  'Backend development',
+  'Languages',
+  'Frameworks & Libraries',
   'Databases',
-  'Other Tools',
+  'Tools & Platforms',
 ];
 
 export const skillData: Skill[] = [
   {
     name: 'Python',
-    category: 'Programming Languages',
+    category: 'Languages',
     IconComponent: PythonOriginal,
   },
   {
     name: 'Flask',
-    category: 'Backend development',
+    category: 'Frameworks & Libraries',
     IconComponent: FlaskOriginal,
   },
   {
     name: 'JavaScript',
-    category: 'Programming Languages',
+    category: 'Languages',
     IconComponent: JavascriptOriginal,
   },
   {
     name: 'TypeScript',
-    category: 'Programming Languages',
+    category: 'Languages',
     IconComponent: TypescriptOriginal,
   },
   {
     name: 'React',
-    category: 'Frontend development',
+    category: 'Frameworks & Libraries',
     IconComponent: ReactOriginal,
   },
   {
     name: 'Express',
-    category: 'Backend development',
+    category: 'Frameworks & Libraries',
     IconComponent: ExpressOriginal,
   },
   {
     name: 'Node.js',
-    category: 'Backend development',
+    category: 'Frameworks & Libraries',
     IconComponent: NodejsOriginal,
   },
   { name: 'MongoDB', category: 'Databases', IconComponent: MongodbOriginal },
@@ -74,48 +73,60 @@ export const skillData: Skill[] = [
     IconComponent: PostgresqlOriginal,
   },
   { name: 'Redis ', category: 'Databases', IconComponent: RedisOriginal },
-  { name: 'Docker', category: 'Other Tools', IconComponent: DockerOriginal },
+  {
+    name: 'Docker',
+    category: 'Tools & Platforms',
+    IconComponent: DockerOriginal,
+  },
   {
     name: 'Kubernetes',
-    category: 'Other Tools',
+    category: 'Tools & Platforms',
     IconComponent: KubernetesOriginal,
   },
-  { name: 'GitHub', category: 'Other Tools', IconComponent: GithubOriginal },
-  { name: 'Git', category: 'Other Tools', IconComponent: GitOriginal },
+  {
+    name: 'GitHub',
+    category: 'Tools & Platforms',
+    IconComponent: GithubOriginal,
+  },
+  { name: 'Git', category: 'Tools & Platforms', IconComponent: GitOriginal },
   {
     name: 'HTML',
-    category: 'Frontend development',
+    category: 'Languages',
     IconComponent: Html5Original,
   },
   {
     name: 'CSS',
-    category: 'Frontend development',
+    category: 'Languages',
     IconComponent: Css3Original,
   },
-  { name: 'Ubuntu', category: 'Other Tools', IconComponent: UbuntuOriginal },
+  {
+    name: 'Ubuntu',
+    category: 'Tools & Platforms',
+    IconComponent: UbuntuOriginal,
+  },
   {
     name: 'GraphQL',
-    category: 'Backend development',
+    category: 'Frameworks & Libraries',
     IconComponent: GraphqlPlain,
   },
   {
     name: 'Redux',
-    category: 'Frontend development',
+    category: 'Frameworks & Libraries',
     IconComponent: ReduxOriginal,
   },
   {
     name: 'Vite',
-    category: 'Frontend development',
+    category: 'Frameworks & Libraries',
     IconComponent: VitejsOriginal,
   },
   {
     name: 'Tailwind',
-    category: 'Frontend development',
+    category: 'Frameworks & Libraries',
     IconComponent: TailwindcssOriginal,
   },
   {
     name: 'GitHub Actions',
-    category: 'Other Tools',
+    category: 'Tools & Platforms',
     IconComponent: GithubactionsOriginal,
   },
 ];
