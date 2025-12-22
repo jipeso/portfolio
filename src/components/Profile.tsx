@@ -19,11 +19,19 @@ const Profile = () => {
           <Button
             href="https://github.com/jipeso"
             variant="contained"
+            target="_blank"
+            rel="noopener noreferrer"
             startIcon={<GitHubIcon />}
           >
             GitHub
           </Button>
-          <Button variant="outlined" startIcon={<LinkedInIcon />}>
+          <Button
+            href="https://www.linkedin.com/in/joni-pesonen-876b9224b"
+            variant="outlined"
+            target="_blank"
+            rel="noopener noreferrer"
+            startIcon={<LinkedInIcon />}
+          >
             LinkedIn
           </Button>
         </Box>

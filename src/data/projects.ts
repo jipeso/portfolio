@@ -8,20 +8,21 @@ export const projectData: Project[] = [
   {
     title: 'Infoscreen',
     description:
-      "Web application for university's infoscreens with an interactive floorplan, a bulletin board and a restaurant menu built with React, Node.js, MongoDB, Redis and Docker",
+      "Infoscreen application for the University of Helsinki's Exactum building, featuring an interactive floor plan with real-time room availability, a digital bulletin board, and campus restaurant menus.",
     link: 'https://github.com/Infopisteprojekti/infopiste',
     image: infoScreenImage,
   },
   {
-    title: 'BibTeX reference tool',
-    description: 'A tool for creating BibTeX references built with Python',
+    title: 'BibTeX reference manager',
+    description:
+      'Application for creating and managing BibTeX references for academic writing.',
     link: 'https://github.com/ruokokoski/ohtu-miniprojekti',
     image: bibtexProjectImage,
   },
   {
-    title: 'News article scraping tool',
+    title: 'News article manager',
     description:
-      'A tool for saving and managing news articles from RSS feeds, built with Tkinter and Python',
+      'Application for saving and managing news articles from RSS feeds.',
     link: 'https://github.com/jipeso/ohjelmistotekniikka',
     image: newsArticlesImage,
   },
