@@ -4,6 +4,7 @@ export const theme = createTheme({
   cssVariables: {
     colorSchemeSelector: 'class',
   },
+  defaultColorScheme: 'dark',
   colorSchemes: {
     light: {
       palette: {

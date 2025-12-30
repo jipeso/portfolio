@@ -76,7 +76,7 @@ const Navbar = () => {
             color="inherit"
             sx={{ color: 'text.primary' }}
           >
-            {mode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
+            {mode === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
           </IconButton>
         </Toolbar>
       </AppBar>
