@@ -35,14 +35,14 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         image={project.image}
         alt={project.title}
         sx={{
-          objectFit: 'contain',
+          borderRadius: 2,
         }}
       />
       <CardContent sx={{ flexGrow: 1, p: 3 }}>
         <Typography gutterBottom variant="h5" color="text.primary">
           {project.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body1" color="text.secondary">
           {project.description}
         </Typography>
       </CardContent>

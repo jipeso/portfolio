@@ -26,11 +26,11 @@ const About = () => {
             color: 'text.secondary',
           }}
         >
-          I'm a computer science master's student at the University of Helsinki
-          passionate about software architecture and development. I enjoy
-          building maintainable and performant applications with intuitive and
-          accessible interfaces. Currently focused on full-stack web development
-          with React and TypeScript.
+          I'm a computer science master's student at the University of Helsinki,
+          having transitioned from studying physics where I discovered my
+          passion for programming. I enjoy building maintainable and performant
+          applications with intuitive and accessible interfaces. Currently, I'm
+          focusing on web development with TypeScript and React.
         </Typography>
       </Container>
     </Box>
