@@ -23,13 +23,13 @@ const Navbar = () => {
   const handleDrawerToggle = () => setMobileOpen((prev) => !prev);
 
   const handleNavClick = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
     setMobileOpen(false);
+    document.getElementById(sectionId)?.scrollIntoView({ block: 'start' });
   };
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
     setMobileOpen(false);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -49,6 +49,7 @@ const Navbar = () => {
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' }, color: 'text.primary' }}
+            aria-label="open naviagtion menu"
           >
             <MenuIcon />
           </IconButton>
@@ -75,6 +76,7 @@ const Navbar = () => {
             onClick={toggleTheme}
             color="inherit"
             sx={{ color: 'text.primary' }}
+            aria-label={`switch to ${mode === 'light' ? 'dark' : 'light'} mode`}
           >
             {mode === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
           </IconButton>
