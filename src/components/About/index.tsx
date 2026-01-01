@@ -33,9 +33,8 @@ const About = () => {
           <Highlight>Theoretical Physics</Highlight>, where I got into
           programming. I enjoy building maintainable and performant applications
           with intuitive and accessible interfaces. Currently focused on{' '}
-          <Highlight>Full Stack Web Development</Highlight> with TypeScript and
-          React, and I'm actively seeking work opportunities in software
-          development.
+          <Highlight>Web Development</Highlight> with TypeScript and React, and
+          I'm actively seeking work opportunities in software development.
         </Typography>
       </Container>
     </Box>
