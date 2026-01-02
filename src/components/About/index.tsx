@@ -11,13 +11,7 @@ const About = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Typography
-          variant="h4"
-          sx={{
-            mb: 2,
-            color: 'text.default',
-          }}
-        >
+        <Typography variant="h2" gutterBottom>
           About Me
         </Typography>
         <Typography

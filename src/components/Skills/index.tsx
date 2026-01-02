@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <Box component="section" id="skills" sx={{ py: 8 }}>
       <Container maxWidth="lg">
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h2" gutterBottom>
           Skills
         </Typography>
         <Grid container spacing={3}>

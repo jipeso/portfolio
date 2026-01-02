@@ -7,8 +7,7 @@ const Profile = () => {
     <Box component="section" id="about" sx={{ py: 8 }}>
       <Container maxWidth="sm">
         <Typography
-          component="h1"
-          variant="h2"
+          variant="h1"
           align="center"
           color="text.primary"
           gutterBottom

@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <Box component="section" id="projects" sx={{ py: 8 }}>
       <Container maxWidth="lg">
-        <Typography variant="h4" sx={{ mb: 4 }}>
+        <Typography variant="h2" gutterBottom>
           Featured Projects
         </Typography>
 
