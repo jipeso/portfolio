@@ -39,10 +39,10 @@ export const theme = createTheme({
   },
   typography: {
     h1: {
-      fontSize: '4rem',
+      fontSize: '3rem',
     },
     h2: {
-      fontSize: '2.5rem',
+      fontSize: '2rem',
     },
     h3: {
       fontSize: '1.5rem',
