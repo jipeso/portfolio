@@ -9,10 +9,10 @@ export const theme = createTheme({
     light: {
       palette: {
         primary: {
-          main: '#5321faff',
+          main: '#6366F1',
         },
         background: {
-          default: '#F1F5F9',
+          default: '#F8FAFC',
           paper: '#FFFFFF',
         },
         text: {
@@ -24,7 +24,7 @@ export const theme = createTheme({
     dark: {
       palette: {
         primary: {
-          main: '#818CF8',
+          main: '#A5B4FC',
         },
         background: {
           default: '#020617',
@@ -39,13 +39,23 @@ export const theme = createTheme({
   },
   typography: {
     h1: {
-      fontSize: '3rem',
+      fontSize: '2.4rem',
+      fontWeight: 700,
     },
     h2: {
-      fontSize: '2rem',
+      fontSize: '1.7rem',
+      fontWeight: 650,
     },
     h3: {
-      fontSize: '1.5rem',
+      fontSize: '1.2rem',
+      fontWeight: 600,
+    },
+    subtitle1: {
+      fontSize: '1rem',
+      fontWeight: 800,
+    },
+    overline: {
+      fontWeight: 700,
     },
   },
 });

@@ -55,17 +55,16 @@ const Navbar = () => {
           </IconButton>
 
           <Typography
+            variant="subtitle1"
             color="text.primary"
-            variant="h6"
             onClick={scrollToTop}
             sx={{
               flexGrow: 1,
-              fontWeight: 700,
               cursor: 'pointer',
               userSelect: 'none',
             }}
           >
-            PORTFOLIO
+            {'PORTFOLIO'}
           </Typography>
 
           <Box sx={{ display: { xs: 'none', sm: 'block' }, mr: 2 }}>
@@ -90,11 +89,11 @@ const Navbar = () => {
         slotProps={{ backdrop: { sx: { backdropFilter: 'blur(4px)' } } }}
         sx={{
           display: { xs: 'block', sm: 'none' },
-          '& .MuiDrawer-paper': { width: 240 },
+          '& .MuiDrawer-paper': { width: 100 },
         }}
       >
         <Box sx={{ textAlign: 'center', pt: 2 }}>
-          <Typography variant="h6" sx={{ mb: 2 }}>
+          <Typography variant="overline" sx={{ mb: 2 }}>
             MENU
           </Typography>
           <List>

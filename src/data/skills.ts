@@ -21,14 +21,7 @@ import VitejsOriginal from 'devicons-react/icons/VitejsOriginal';
 import TailwindcssOriginal from 'devicons-react/icons/TailwindcssOriginal';
 import GithubactionsOriginal from 'devicons-react/icons/GithubactionsOriginal';
 
-import type { Skill, Category } from '../types';
-
-export const categories: Category[] = [
-  'Languages',
-  'Frameworks & Libraries',
-  'Databases',
-  'Tools & Platforms',
-];
+import { type Skill } from '../types';
 
 export const skillData: Skill[] = [
   {

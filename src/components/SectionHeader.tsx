@@ -11,21 +11,11 @@ const SectionHeader = ({ overline, title }: SectionHeaderProps) => (
       variant="overline"
       sx={{
         color: 'primary.main',
-        fontWeight: 'bold',
-        letterSpacing: 2,
-        display: 'block',
       }}
     >
       {overline}
     </Typography>
-    <Typography
-      variant="h2"
-      sx={{
-        fontWeight: 500,
-      }}
-    >
-      {title}
-    </Typography>
+    <Typography variant="h2">{title}</Typography>
   </Box>
 );
 

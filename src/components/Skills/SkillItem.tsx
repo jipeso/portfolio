@@ -11,22 +11,20 @@ const SkillItem = ({ skill }: SkillItemProps) => {
   return (
     <Tooltip title={name} arrow enterDelay={300} enterNextDelay={300}>
       <Paper
-        elevation={0}
+        elevation={3}
         component="div"
+        role="img"
+        aria-label={name}
         sx={{
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           width: 60,
           height: 60,
-          bgcolor: '#FFFFFF',
-
-          border: '1px solid',
-          borderColor: 'divider',
           borderRadius: 2,
         }}
       >
-        <IconComponent size={40} />
+        <IconComponent size={45} />
       </Paper>
     </Tooltip>
   );

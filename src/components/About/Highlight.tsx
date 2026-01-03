@@ -5,7 +5,7 @@ interface HighlightProps {
 }
 
 const Highlight = ({ children }: HighlightProps) => (
-  <Box component="span" sx={{ fontWeight: 'bold', color: 'primary.main' }}>
+  <Box component="span" sx={{ color: 'primary.main' }}>
     {children}
   </Box>
 );

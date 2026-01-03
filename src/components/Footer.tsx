@@ -5,7 +5,7 @@ const currentYear = new Date().getFullYear();
 const Footer = () => {
   return (
     <Box component="footer" sx={{ py: 8 }}>
-      <Typography variant="subtitle1" align="center" color="text.secondary">
+      <Typography variant="body2" align="center" color="text.secondary">
         © {currentYear} Joni Pesonen. Made with React + Vite.
       </Typography>
     </Box>
