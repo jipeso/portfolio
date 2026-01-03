@@ -1,29 +1,49 @@
-import { Box, Container, Stack, Typography } from '@mui/material';
+import { Box, Container, Stack, Typography, Avatar } from '@mui/material';
+
 import LocationPinIcon from '@mui/icons-material/LocationPin';
+
 import SocialLinks from './SocialLinks';
+
+import profileImg from '../../assets/profile-image.webp';
 
 const Profile = () => {
   return (
-    <Box component="section" id="about" sx={{ py: 8 }}>
+    <Box component="section" id="about">
       <Container maxWidth="md">
-        <Stack spacing={1}>
-          <Typography variant="h1">Joni Pesonen</Typography>
+        <Stack
+          direction={{ xs: 'column', sm: 'row' }}
+          spacing={{ xs: 4, sm: 12 }}
+        >
+          <Stack spacing={1}>
+            <Typography variant="h1">Joni Pesonen</Typography>
+            <Typography variant="body1" color="primary.main">
+              CS Student & Software Developer
+            </Typography>
 
-          <Typography variant="body1" color="text.secondary">
-            CS Student & Software Developer
-          </Typography>
+            <Stack
+              direction="row"
+              alignItems="center"
+              spacing={0.5}
+              sx={{ color: 'text.secondary', mb: 2 }}
+            >
+              <LocationPinIcon />
+              <Typography variant="body1">Helsinki, Finland</Typography>
+            </Stack>
 
-          <Stack
-            direction="row"
-            alignItems="center"
-            spacing={0.5}
-            sx={{ color: 'text.secondary', mb: 2 }}
-          >
-            <LocationPinIcon />
-            <Typography variant="body1">Helsinki, Finland</Typography>
+            <SocialLinks />
           </Stack>
+
+          <Avatar
+            src={profileImg}
+            alt="Joni Pesonen"
+            sx={{
+              width: 180,
+              height: 180,
+              border: '3px solid',
+              borderColor: 'primary.main',
+            }}
+          />
         </Stack>
-        <SocialLinks />
       </Container>
     </Box>
   );

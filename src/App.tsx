@@ -12,7 +12,7 @@ const App = () => {
     <>
       <CssBaseline />
       <Navbar />
-      <Stack component="main" spacing={0}>
+      <Stack component="main" spacing={6} sx={{ pt: 8 }}>
         <Profile />
         <About />
         <Skills />

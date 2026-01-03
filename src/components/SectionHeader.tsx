@@ -6,7 +6,7 @@ interface SectionHeaderProps {
 }
 
 const SectionHeader = ({ overline, title }: SectionHeaderProps) => (
-  <Box sx={{ mb: 4 }}>
+  <Box sx={{ mb: 2 }}>
     <Typography
       variant="overline"
       sx={{

@@ -4,13 +4,7 @@ import SectionHeader from '../SectionHeader';
 
 const About = () => {
   return (
-    <Box
-      component="section"
-      id="about"
-      sx={{
-        py: 8,
-      }}
-    >
+    <Box component="section" id="about">
       <Container maxWidth="md">
         <SectionHeader overline="Introduction" title="About Me" />
         <Typography
