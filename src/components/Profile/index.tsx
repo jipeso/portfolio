@@ -1,21 +1,25 @@
 import { Box, Container, Stack, Typography, Avatar } from '@mui/material';
-
 import LocationPinIcon from '@mui/icons-material/LocationPin';
 
 import SocialLinks from './SocialLinks';
-
 import profileImg from '../../assets/profile-image.webp';
 
 const Profile = () => {
   return (
-    <Box component="section" id="profile">
+    <Box component="section" id="profile" sx={{ pb: 4 }}>
       <Container maxWidth="md">
         <Stack
           direction={{ xs: 'column', sm: 'row' }}
-          spacing={{ xs: 4, sm: 12 }}
+          spacing={{ sm: 14 }}
           alignItems="center"
         >
-          <Stack spacing={1}>
+          <Stack
+            spacing={1}
+            sx={{
+              order: { xs: 2, sm: 1 },
+              pt: { xs: 3, sm: 0 },
+            }}
+          >
             <Typography variant="h1">Joni Pesonen</Typography>
             <Typography variant="body1" color="primary.main">
               CS Student & Software Developer
@@ -25,7 +29,7 @@ const Profile = () => {
               direction="row"
               alignItems="center"
               spacing={0.5}
-              sx={{ color: 'text.secondary', mb: 2 }}
+              sx={{ color: 'text.secondary' }}
             >
               <LocationPinIcon />
               <Typography variant="body1">Helsinki, Finland</Typography>
@@ -42,6 +46,7 @@ const Profile = () => {
               height: 180,
               border: '3px solid',
               borderColor: 'primary.main',
+              order: { xs: 1, sm: 2 },
             }}
           />
         </Stack>

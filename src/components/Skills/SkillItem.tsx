@@ -11,7 +11,7 @@ const SkillItem = ({ skill }: SkillItemProps) => {
   return (
     <Tooltip title={name} arrow enterDelay={300} enterNextDelay={300}>
       <Paper
-        elevation={3}
+        elevation={4}
         component="div"
         role="img"
         aria-label={name}
