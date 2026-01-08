@@ -6,7 +6,7 @@ import profileImg from '../../assets/profile-image.webp';
 
 const Profile = () => {
   return (
-    <Box component="section" id="profile" sx={{ pb: 4 }}>
+    <Box component="section" id="profile">
       <Container maxWidth="md">
         <Stack
           direction={{ xs: 'column', sm: 'row' }}
@@ -21,7 +21,7 @@ const Profile = () => {
             }}
           >
             <Typography variant="h1">Joni Pesonen</Typography>
-            <Typography variant="body1" color="primary.main">
+            <Typography color="primary.main">
               CS Student & Software Developer
             </Typography>
 
@@ -32,7 +32,7 @@ const Profile = () => {
               sx={{ color: 'text.secondary' }}
             >
               <LocationPinIcon />
-              <Typography variant="body1">Helsinki, Finland</Typography>
+              <Typography>Helsinki, Finland</Typography>
             </Stack>
 
             <SocialLinks />

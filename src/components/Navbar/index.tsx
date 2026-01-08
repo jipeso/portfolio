@@ -8,12 +8,15 @@ import {
   Drawer,
   List,
   useColorScheme,
+  Divider,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 import NavLinks from './NavLinks';
+
+const DRAWER_WIDTH = 140;
 
 const Navbar = () => {
   const { mode, setMode } = useColorScheme();
@@ -23,13 +26,11 @@ const Navbar = () => {
   const handleDrawerToggle = () => setMobileOpen((prev) => !prev);
 
   const handleNavClick = (sectionId: string) => {
-    setMobileOpen(false);
     document.getElementById(sectionId)?.scrollIntoView({ block: 'start' });
   };
 
   const scrollToTop = () => {
-    setMobileOpen(false);
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0 });
   };
 
   return (
@@ -59,13 +60,15 @@ const Navbar = () => {
             color="text.primary"
             onClick={scrollToTop}
             sx={{
-              flexGrow: 1,
               cursor: 'pointer',
               userSelect: 'none',
+              fontFamily: 'monospace',
             }}
           >
-            {'PORTFOLIO'}
+            {'[jipeso]'}
           </Typography>
+
+          <Box sx={{ flexGrow: 1 }} />
 
           <Box sx={{ display: { xs: 'none', sm: 'block' }, mr: 2 }}>
             <NavLinks onItemClick={handleNavClick} />
@@ -86,16 +89,21 @@ const Navbar = () => {
         variant="temporary"
         open={mobileOpen}
         onClose={handleDrawerToggle}
+        ModalProps={{ keepMounted: true }}
         slotProps={{ backdrop: { sx: { backdropFilter: 'blur(4px)' } } }}
         sx={{
           display: { xs: 'block', sm: 'none' },
-          '& .MuiDrawer-paper': { width: 100 },
+          '& .MuiDrawer-paper': {
+            boxSizing: 'border-box',
+            width: DRAWER_WIDTH,
+          },
         }}
       >
-        <Box sx={{ textAlign: 'center', pt: 2 }}>
-          <Typography variant="overline" sx={{ mb: 2 }}>
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', pt: 2 }}>
+          <Typography variant="subtitle1" sx={{ mb: 2 }}>
             MENU
           </Typography>
+          <Divider />
           <List>
             <NavLinks onItemClick={handleNavClick} isMobile />
           </List>

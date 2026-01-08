@@ -51,11 +51,14 @@ export const theme = createTheme({
       fontWeight: 600,
     },
     subtitle1: {
-      fontSize: '1rem',
-      fontWeight: 800,
+      fontSize: '1.1rem',
+      fontWeight: 600,
     },
     overline: {
       fontWeight: 700,
+    },
+    body2: {
+      fontWeight: 500,
     },
   },
 });

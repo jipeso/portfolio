@@ -43,9 +43,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <Typography variant="h3" gutterBottom>
           {project.title}
         </Typography>
-        <Typography variant="body1" color="text.secondary">
-          {project.description}
-        </Typography>
+        <Typography color="text.secondary">{project.description}</Typography>
       </CardContent>
       <CardActions sx={{ p: 2 }}>
         <Button

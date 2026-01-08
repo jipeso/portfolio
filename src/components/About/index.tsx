@@ -4,11 +4,10 @@ import SectionHeader from '../SectionHeader';
 
 const About = () => {
   return (
-    <Box component="section" id="about" sx={{ scrollMarginTop: '80px' }}>
+    <Box component="section" id="about" sx={{ scrollMarginTop: '60px' }}>
       <Container maxWidth="md">
         <SectionHeader overline="Introduction" title="About Me" />
         <Typography
-          variant="body1"
           sx={{
             lineHeight: 1.8,
             color: 'text.secondary',

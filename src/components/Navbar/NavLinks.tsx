@@ -11,8 +11,11 @@ const NavLinks = ({ onItemClick, isMobile = false }: NavLinkProps) => (
   <>
     {NAV_ITEMS.map((item) =>
       isMobile ? (
-        <ListItem key={item}>
-          <ListItemButton onClick={() => onItemClick(item)}>
+        <ListItem key={item} disablePadding>
+          <ListItemButton
+            onClick={() => onItemClick(item)}
+            sx={{ textAlign: 'center' }}
+          >
             <ListItemText primary={item} sx={{ textTransform: 'capitalize' }} />
           </ListItemButton>
         </ListItem>
@@ -21,7 +24,10 @@ const NavLinks = ({ onItemClick, isMobile = false }: NavLinkProps) => (
           key={item}
           color="inherit"
           onClick={() => onItemClick(item)}
-          sx={{ textTransform: 'capitalize', color: 'text.primary' }}
+          sx={{
+            textTransform: 'uppercase',
+            color: 'text.primary',
+          }}
         >
           {item}
         </Button>
